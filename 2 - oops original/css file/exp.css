@@ -1,0 +1,28 @@
+.show-hide-psrd{
+    padding: 3px;
+    position: absolute;
+    left: 90%;
+}
+.show-hide-psrd svg{
+    display: flex !important;
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    fill: var(--main-color) !important;
+}
+.show-hide-psrd::before{
+    content: '';
+    width: 13px;
+    height: 2px;
+    background-color: #7e7e7e;
+    position: absolute;
+    top: 48%;
+    right: 50%;
+    translate: 53%;
+    rotate: -45deg;
+    z-index: 1;
+    transition: .3s;
+}
+.show-hide-psrd.line::before{
+    width: 0px;
+}
